@@ -242,6 +242,14 @@ input[type="submit"] {
   padding: 0.5em 1em;
 }
 
+footer {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  padding-block: 2em;
+}
+
 @media all and (max-width: 1180px) {
   .picture {
     flex: 2;
