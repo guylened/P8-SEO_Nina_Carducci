@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
+		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 		<title>Nina Carducci - Photographe passionnée</title>
 		<meta
 			name="description"
@@ -63,7 +65,6 @@
 			href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
 			rel="stylesheet"
 		/>
-		<meta charset="UTF-8" />
 		<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
 		<script
 			src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -95,9 +96,10 @@
 			}
 		</script>
 	</head>
+
 	<body>
-		<div class="top-header">
-			<h1 class="name">Nina Carducci</h1>
+		<div class="top-header" itemscope itemtype="https://schema.org/ProfessionalService">
+			<h1 class="name"  itemprop="name">Nina Carducci</h1>
 			<div class="nav">
 				<ul>
 					<li><a href="#about">À propos</a></li>
@@ -193,7 +195,7 @@
 				</button>
 			</div>
 		</div>
-		<div id="about">
+		<div id="about" itemscope itemtype="http://schema.org/Person">
 			<div class="picture left">
 				<img
 					src="./assets/images/nina-ori.webp"
@@ -203,7 +205,7 @@
 					itemprop="image"
 				/>
 			</div>
-			<div id="about-me" itemscope itemtype="http://schema.org/Person">
+			<div id="about-me" >
 				<h2 class="about-me__title" itemprop="name">Nina Carducci</h2>
 				<h3 class="about-me__introduction">
 					<span itemprop="jobTitle">Photographe</span>
@@ -234,72 +236,72 @@
 						data-gallery-tag="Concert"
 						class="gallery-item"
 						src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp"
-						height="auto"
-						width="auto"
+						height="500"
+						width="500"
 						alt="lumières rouges en concert"
 					/>
 					<img
 						data-gallery-tag="Entreprises"
 						class="gallery-item"
 						src="./assets/images/gallery/entreprise/ali-morshedlou-wmd64tmfc4k-unsplash.webp"
-						height="auto"
-						width="auto"
+						height="500"
+						width="500"
 						alt="portrait d'un homme en costume"
 					/>
 					<img
 						data-gallery-tag="Entreprises"
 						class="gallery-item"
 						src="./assets/images/gallery/entreprise/jason-goodman-tho1-oukbg0-unsplash.webp"
-						height="auto"
-						width="auto"
+						height="500"
+						width="500"
 						alt="femme souriante"
 					/>
 					<img
 						data-gallery-tag="Mariages"
 						class="gallery-item"
 						src="./assets/images/gallery/mariage/hannah-busing-rvf2r-qmprk-unsplash.webp"
-						height="auto"
-						width="auto"
+						height="500"
+						width="500"
 						alt="mains se joignant"
 					/>
 					<img
 						data-gallery-tag="Portrait"
 						class="gallery-item"
 						src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp"
-						height="auto"
-						width="auto"
+						height="500"
+						width="500"
 						alt="homme noir éblouï"
 					/>
 					<img
 						data-gallery-tag="Mariages"
 						class="gallery-item"
 						src="./assets/images/gallery/mariage/jakob-owens-siniljkxhmc-unsplash.webp"
-						height="auto"
-						width="auto"
+						height="500"
+						width="500"
 						alt="jeunes mariées souriants main dans la main"
 					/>
 					<img
 						data-gallery-tag="Portrait"
 						class="gallery-item"
 						src="./assets/images/gallery/portraits/nino-van-prattenburg-443cl1ur-8-unsplash.webp"
-						height="auto"
-						width="auto"
+						height="500"
+						width="500"
 						alt="portrait de jeune femme à lunettes"
 					/>
 					<img
 						data-gallery-tag="Concert"
 						class="gallery-item"
 						src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp"
-						height="auto"
-						width="auto"
+						height="500"
+						width="500"
 						alt="lumières jaunes en concert"
 					/>
 					<img
 						data-gallery-tag="Entreprises"
 						class="gallery-item"
 						src="./assets/images/gallery/entreprise/jason-goodman-bzqU01v-g4Q-unsplash.webp"
-						height="auto"
-						width="auto"
+						height="500"
+						width="500"
 						alt="jeune femme en entreprise amusée"
 					/>
 				</div>
@@ -382,7 +384,7 @@
 					<p>
 						N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures
 					</p>
-					<form action="" method="post">
+					<form method="post">
 						<label for="nom">Nom</label>
 						<input type="text" name="nom" id="nom" />
 
