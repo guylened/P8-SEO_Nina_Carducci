@@ -45,6 +45,36 @@ img {
 
 .social-link img {
   width: 20px;
+  height: 20px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  top: 50%;
+  width: 53px;
+  height: 53px;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0.8;
+}
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 1;
+}
+
+.carousel-control-prev {
+  left: 10px;
+}
+.carousel-control-next {
+  right: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  opacity: 1;
 }
 
 #about {
@@ -84,12 +114,14 @@ img {
   font-size: 30px;
 }
 .about-me__introduction {
-  font-family: "Spectral";
+  font-family: Spectral;
   font-weight: 800;
   font-style: italic;
   width: 60%;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
-#about-me p {
+.about-me_paragraph {
   width: 80%;
   font-size: 14px;
 }
@@ -100,6 +132,7 @@ img {
 .title {
   text-align: center;
   padding-block: 2em;
+  font-size: 1.75rem;
 }
 .gallery .nav {
   justify-content: center;
@@ -142,7 +175,7 @@ img {
 }
 
 .quote {
-  font-family: "Spectral";
+  font-family: Spectral;
   font-style: italic;
   width: 70%;
   margin: auto;
@@ -152,6 +185,7 @@ img {
   font-family: Spectral;
   font-style: italic;
   font-weight: 300;
+  font-size: 2.5rem;
 }
 .quote__author {
   font-family: Spectral;
@@ -241,7 +275,12 @@ form textarea {
   font-size: 1.2em;
   margin-bottom: 20px;
 }
-input[type="submit"] {
+button {
+  font-family: Inter;
+  width: 100%;
+  height: 2.5rem;
+  border: solid 1px;
+  margin-bottom: 20px;
   background-color: #beb45a;
   padding: 0.5em 1em;
 }
@@ -258,7 +297,11 @@ input[type="submit"] {
     margin-top: 0;
     margin-bottom: 1em;
   }
-  #about-me h6,
+
+  .about-me__introduction {
+    width: 100%;
+  }
+
   #about-me p {
     width: 100%;
   }
@@ -267,6 +310,9 @@ input[type="submit"] {
 @media all and (max-width: 1000px) {
   #about {
     flex-direction: column;
+  }
+  .title {
+    font-size: calc(1.3rem + 0.6vw);
   }
   .picture {
     width: 50%;
@@ -283,6 +329,9 @@ input[type="submit"] {
   .about-me__title {
     text-align: center;
     margin-top: 1em;
+  }
+  .quote__text {
+    font-size: calc(1.375rem + 1.5vw);
   }
   #services .container {
     flex-direction: column;
@@ -308,6 +357,9 @@ input[type="submit"] {
 
   #contact .container {
     flex-direction: column;
+  }
+  #contact form {
+    width: 100%;
   }
   #contact .picture.right {
     margin-top: 1em;
